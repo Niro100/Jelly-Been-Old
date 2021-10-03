@@ -68,7 +68,7 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('✅', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('', url=f'{TUTORIAL}')
                     ],
                     [
                         InlineKeyboardButton('නැවතත් සොයන්න 🔎', switch_inline_query_current_chat='')
@@ -197,7 +197,7 @@ async def bot_info(bot, message):
     buttons = [
         [
             InlineKeyboardButton('🔥 Updates 🔥', url='https://t.me/NFLK_UpdatesX'),
-            InlineKeyboardButton('✅', url=f'{TUTORIAL}')
+            InlineKeyboardButton('', url=f'{TUTORIAL}')
         ]
         ]
     await message.reply(text=f"<b>👋Hi,\nI am Very Powerful\n\n🗯\n🔬Language : <code>Python3</code>\n📚Library : <a href='https://docs.pyrogram.org/'>Pyrogram</a>\nMain 📑 : 🔐\nStat: <a href='{TUTORIAL}'>Click here</a>\nMy Updates ✅: <a href='https://t.me/Netflixlkchat'>Click here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
