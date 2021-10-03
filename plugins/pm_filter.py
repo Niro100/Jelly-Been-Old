@@ -31,7 +31,7 @@ async def filter(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🐞 Join Updates Channel 🐞", url=invite_link.invite_link)
+                            InlineKeyboardButton("Updates Channel එකට Join වෙන්න ✅", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -223,7 +223,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⌫ ආපසු", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⇨", callback_data=f"next_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("⌫ ආපසු", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("ඊලඟ ⇨", callback_data=f"next_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 පිටු {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -247,10 +247,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("NEXT ⇨", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("ඊලඟ ⇨", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"📃 Pages {int(index)}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"📃 පිටු {int(index)}/{data['total']}", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -261,7 +261,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⌫ ආපසු", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⇨", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("⌫ ආපසු", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("ඊලඟ ⇨", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 පිටු {int(index)}/{data['total']}", callback_data="pages")]
@@ -274,11 +274,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='t.me/NFLK_UpdatesX'),
-                    InlineKeyboardButton('Support', url=f'{TUTORIAL}')
+                    InlineKeyboardButton('Updates Channel 🔥', url='t.me/NFLK_UpdatesX'),
+                    InlineKeyboardButton('', url=f'{TUTORIAL}')
                 ]
                 ]
-            await query.message.edit(text=f"<b>🔥 NFLK \n\n[ @NFLK_Updates ]\n\n♻️ If any series is Not Available, Then Request it at\n@jelybenn_request_Bot\n\n👨‍💻Developer : <a href='https://github.com/SenuGamerBoy'>Senu Gamer Boy</a>\n📑Language : <code>Python3</code>\n📚Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n🗯Support Group : <a href='{TUTORIAL}'>Click here</a>\n📋Update Channel : <a href='https://t.me/senuinfinity'>Senu Infinity</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text=f"<b>🔥 NFLK \n\n[ @NFLK_Updates ]\n\nඔයාට Request එකක් තිබේ නම්, අපෙ Group එකට දාන්න👉\n@Netflixlkchat\n\n👨‍💻Developer : <a href=''>Senu Gamer Boy</a>\n📑Language : <code>Python3</code>\n📚Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n : <a href='{TUTORIAL}'>Click here</a>\nCredits : <a href='https://t.me/senuinfinity'>Senu Infinity</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -299,7 +299,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('☀ Support ☀', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('', url=f'{TUTORIAL}')
                     ]
                     ]
                 
@@ -330,7 +330,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('☀ Support ☀', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('', url=f'{TUTORIAL}')
                     ]
                     ]
                 
@@ -346,4 +346,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("Isn't it a little more interesting? 😅 @senuinfinity",show_alert=True)
+        await query.answer("Isn't it a little more interesting? ",show_alert=True)
