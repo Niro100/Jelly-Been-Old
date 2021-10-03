@@ -29,14 +29,14 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**You have not joined our My Updates channel😒💔 .The Join Our Channel shown below is for you to join the channel .You will never lose while being on the Updates channel 🤗!**",
+                    text="**ඔයා තාම අපේ Updates channel එකට Join වෙලා නෑ .පහළින් ඒකට Join වෙන්න👇 **",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("❖ Join Updates Channel ❖", url=invite_link.invite_link)
+                                InlineKeyboardButton("❖ Updates Channel එකට Join වෙන්න ❖", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("↺ Try Again ↻", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("↺ නැවත උත්සාහ කරන්න ↻", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -68,10 +68,10 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('☀ Support ☀', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('✅', url=f'{TUTORIAL}')
                     ],
                     [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('නැවතත් සොයන්න 🔎', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -90,7 +90,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("👉 Join Updates Channel 👈", url=invite_link.invite_link)
+                        InlineKeyboardButton("👉 Updates Channel එකට Join වෙන්න 👈", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -103,11 +103,11 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⎚ Search Here ⎚", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("↺ My Updates ↻", url="https://t.me/senuinfinity")
+                        InlineKeyboardButton("Search කරන්න 🔎", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("↺ Updates ↻", url="https://t.me/NFLK_UpdatesX")
                     ],
                     [
-                        InlineKeyboardButton("❖ About Me ❖", callback_data="about")
+                        InlineKeyboardButton("ℹ️ About Me", callback_data="about")
                     ]
                 ]
             )
@@ -196,8 +196,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('🔔 My Updates 🔔', url='https://t.me/senuinfinity'),
-            InlineKeyboardButton('🗴 Support 🗴', url=f'{TUTORIAL}')
+            InlineKeyboardButton('🔥 Updates 🔥', url='https://t.me/NFLK_UpdatesX'),
+            InlineKeyboardButton('✅', url=f'{TUTORIAL}')
         ]
         ]
-    await message.reply(text=f"<b>👋Hi,\nI am Very Powerfull Movie Filter Bot By @senuinfinity\n\nAbout Me 🗯\n🔬Language : <code>Python3</code>\n📚Library : <a href='https://docs.pyrogram.org/'>Pyrogram</a>\nSource Code 📑 : 🔐\nSupport 🌻: <a href='{TUTORIAL}'>Click here</a>\nMy Updates 🎇: <a href='https://t.me/senuinfinitygroup'>Click here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text=f"<b>👋Hi,\nI am Very Powerful\n\n🗯\n🔬Language : <code>Python3</code>\n📚Library : <a href='https://docs.pyrogram.org/'>Pyrogram</a>\nMain 📑 : 🔐\nStat: <a href='{TUTORIAL}'>Click here</a>\nMy Updates ✅: <a href='https://t.me/Netflixlkchat'>Click here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
