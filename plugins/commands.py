@@ -86,7 +86,7 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**කරුණාකරලා අපේ Updates Channel එකට Join වෙන්න, අපෙ Bot භාවිත කරන්න!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
