@@ -274,11 +274,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='t.me/senuinfinity'),
-                    InlineKeyboardButton('Support 😁', url=f'{TUTORIAL}')
+                    InlineKeyboardButton('Update Channel', url='t.me/NFLK_UpdatesX'),
+                    InlineKeyboardButton('🔝', url=f'{TUTORIAL}')
                 ]
                 ]
-            await query.message.edit(text=f"<b>🔘 Just Send Series Name and Season OR Use Inline Search Button.\n\n[Dont Use words Like Season/Episode/Series]\n\n♻️ If any series is Not Available, Then Request it at\n@jelybenn_request_Bot\n\n👨‍💻Developer : <a href='https://github.com/SenuGamerBoy'>Senu Gamer Boy</a>\n📑Language : <code>Python3</code>\n📚Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n🗯Support Group : <a href='{TUTORIAL}'>Click here</a>\n📋Update Channel : <a href='https://t.me/senuinfinity'>Senu Infinity</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text=f"<b>🔘 මේකට Request එකක් දාන්න 👉 @Netflixlkchat .\n\n[ 🔥 NFLK 🔥 ]\n\n♻️ Active ✅\n@NetflixLK_Bot\n\n👨‍💻Developer : <a href='https://github.com'>Senu Gamer Boy</a>\n📑Language : <code>Python3</code>\n📚Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n🗯DK : <a href='{TUTORIAL}'>Click here</a>\n📋Update Channel : <a href='https://t.me/netflixlkchat'>Senu Infinity</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -299,7 +299,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('☀ Support ☀', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('🔝', url=f'{TUTORIAL}')
                     ]
                     ]
                 
@@ -330,7 +330,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('☀ Support ☀', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('🔝', url=f'{TUTORIAL}')
                     ]
                     ]
                 
@@ -346,4 +346,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("Isn't it a little more interesting? 😅 @senuinfinity",show_alert=True)
+        await query.answer("Isn't it a little more interesting ",show_alert=True)
