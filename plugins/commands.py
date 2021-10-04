@@ -108,6 +108,8 @@ async def start(bot, cmd):
                     ],
                     [
                         InlineKeyboardButton("ℹ️ About Me", callback_data="about")
+                        InlineKeyboardButton("➕ Add Me To Your Group ➕", url="http://t.me/MahaZonaBot?startgroup=True")
+                        InlineKeyboardButton("Discussion ✅", url="http://t.me/Netflixlkchat")
                     ]
                 ]
             )
