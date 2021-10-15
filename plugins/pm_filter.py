@@ -31,7 +31,7 @@ async def filter(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("අපේ Updates Channel එකට Join වෙන්න ✅", url=invite_link.invite_link)
+                            InlineKeyboardButton("මේ Channel එකට Join වෙලා ඉන්න", url=invite_link.invite_link)
                         ]
                     ]
                 ),
