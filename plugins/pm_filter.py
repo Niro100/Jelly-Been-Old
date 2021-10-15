@@ -124,7 +124,7 @@ async def group(client, message):
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=SenuInfinity_-_-_-_{file_id}")]
+                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=NFLK_-_-_-_{file_id}")]
                 )
         else:
             return
@@ -274,15 +274,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='t.me/NFLK_UpdatesX'),
+                    InlineKeyboardButton('Update Channel', url='t.me/nflkupdatesx'),
                     InlineKeyboardButton('🔝', url=f'{TUTORIAL}')
                 ]
                 ]
-            await query.message.edit(text=f"<b>🔘 ඔයාගෙ Request මේකට එවන්න 👉 @pusthakalaya .\n\n[ පුස්තකාලය ❤️ ]\n\n♻️ Active ✅\n@pusthakalaya123\n\nCredit Goes to : <a href='https://t.me/NFLK_UpdatesX'>NFLK</a>\n📑Language : <code>Python3</code>\n📚Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n🗯Devlop Chat : <a href='{TUTORIAL}'>Click here</a>\n📋පුස්තකාලය Group : <a href='https://t.me/pusthakalaya'>PDF</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text=f"<b>🔘 PDF පුස්තකාලය Official Group 👉 @pusthakalaya .\n\n[ පුස්තකාලය ❤️ ]\n\n♻️ Active ✅\n@pusthakalaya123\n\nCredit Goes to : <a href='https://t.me/NFLK_UpdatesX'>NFLK</a>\n📑Language : <code>Python3</code>\n📚Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n🗯Devlop Chat : <a href='{TUTORIAL}'>Click here</a>\n📋පුස්තකාලය Group : <a href='https://t.me/pusthakalaya'>PDF</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
-        elif query.data.startswith("SenuInfinity"):
+        elif query.data.startswith("NFLK_UpdatesX"):
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
             for files in filedetails:
