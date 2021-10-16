@@ -29,11 +29,11 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**ඔයා තාම අපේ Updates channel එකට Join වෙලා නෑ .පහළින් ඒකට Join වෙන්න👇 **",
+                    text="**ඔයා තාම අපේ developer channel එකට Join වෙලා නෑ .පහළින් ඒකට Join වෙන්න👇 **",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("❖ Updates Channel එකට Join වෙන්න ❖", url=invite_link.invite_link)
+                                InlineKeyboardButton("❖ Channel එකට Join වෙන්න ❖", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton("↺ නැවත උත්සාහ කරන්න ↻", callback_data=f"checksub#{file_id}")
@@ -71,7 +71,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton('', url=f'{TUTORIAL}')
                     ],
                     [
-                        InlineKeyboardButton('නැවතත් සොයන්න 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('නැවත සොයන්න 🔎', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -86,11 +86,11 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**අපේ Botව භාවිතා කරන්න අවශ්‍ය නම් පහල Updates Channel එකට Join වෙන්න 👇!**",
+            text="**අපේ Botව භාවිතා කරන්න අවශ්‍ය නම් පහල Developer Channel එකට Join වෙන්න 👇!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("👉 Updates Channel එකට Join වෙන්න 👈", url=invite_link.invite_link)
+                        InlineKeyboardButton("👉 Developer's Channel එකට Join වෙන්න 👈", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -104,10 +104,10 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("Search කරන්න 🔎", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("↺ Updates ↻", url="https://t.me/NFLK_Updates")
+                        InlineKeyboardButton("↺ Updates ↻", url="https://t.me/pusthakalaya123")
                     ],
                     [
-                        InlineKeyboardButton("ℹ️ About Me", callback_data="about")
+                        InlineKeyboardButton("ℹ️ මම ගැන", callback_data="about")
                     ]
                 ]
             )
@@ -196,8 +196,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('🔥 Updates 🔥', url='https://t.me/NFLK_UpdatesX'),
+            InlineKeyboardButton('PDF පුස්තකාලය Channel', url='https://t.me/pusthakalaya123'),
             InlineKeyboardButton('', url=f'{TUTORIAL}')
         ]
         ]
-    await message.reply(text=f"<b>👋Hi,\nI am Very Powerful\n\n🗯\n🔬Language : <code>Python3</code>\n📚Library : <a href='https://docs.pyrogram.org/'>Pyrogram</a>\nMain 📑 : 🔐\nStat: <a href='{TUTORIAL}'>Click here</a>\nMy Updates ✅: <a href='https://t.me/Netflixlkchat'>Click here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text=f"<b>👋Hi,\nI am Very Powerful\n\n🗯\n🔬Language : <code>Python3</code>\n📚Library : <a href='https://docs.pyrogram.org/'>Pyrogram</a>\nMain 📑 : 🔐\nStat: <a href='{TUTORIAL}'>Click here</a>\nMy Updates ✅: <a href='https://t.me/pusthakalaya'>Click here</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
