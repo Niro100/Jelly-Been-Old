@@ -27,11 +27,11 @@ async def filter(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
-                text="**Bot එක භාවිතා කරන්න කලින් මේ Channel එකට Join වෙලා ඉන්න!**",
+                text="**Bot එක භාවිතා කරන්න කලින් Bot Updates Channel එකට Join වෙලා ඉන්න!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("මේ Channel එකට Join වෙලා ඉන්න", url=invite_link.invite_link)
+                            InlineKeyboardButton("Channel එකට Join වෙන්න 👆", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -202,7 +202,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             try:
                 data = BUTTONS[keyword]
             except KeyError:
-                await query.answer("You are using this for one of my old message, please send the request again.",show_alert=True)
+                await query.answer("ඔයා මේ දකින්නෙ මගෙ පරණ පණිවිඩයක්, නැවත අලුත් request එකක් එවන්න.",show_alert=True)
                 return
 
             if int(index) == int(data["total"]) - 2:
@@ -274,7 +274,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='t.me/SenuInfinity'),
+                    InlineKeyboardButton('PDF පුස්තකාලය Channel', url='t.me/pusthakalaya123'),
                     InlineKeyboardButton('🔝', url=f'{TUTORIAL}')
                 ]
                 ]
